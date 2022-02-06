@@ -1,0 +1,8 @@
+//Notes 🎓👀
+//window === globalThis
+//En DENO tenemos la API de window directamente como por ejemplo: window.localStorage
+//En DENO al ejecutar el comando deno run --allow-net index.js descarga las dependencias de la página
+//Servidor muy simple, sencillo y rápido
+//El comando para ejecutar constantemente es deno run --allow-net --watch index.ts
+//Con el comando deno fmt index.ts. Le da formato a los archivos de código
+//deno run --watch --allow-net=pokeapi.co index.ts

@@ -1,0 +1,23 @@
+//PROBANDO EL HOLA MUNDO
+// import {serve} from './deps.ts'
+// console.log("http://localhost:8000/");
+// serve((req) => new Response("Hello aaaaa!!!\n"), { port: 8000 });
+
+//UTILIZANDO THIRD PARTY O LIBRERIAS POR URLS
+// import { add } from "https://raw.githubusercontent.com/selfrefactor/rambda/master/dist/rambda.esm.js";
+// console.log(add(1, 5));
+
+//USANDO FETCH
+// globalThis.fetch('https://pokeapi.co/api/v2/pokemon/800')
+//     .then(response => response.json())
+//     .then(result => {console.log(result);})
+
+// const response = await fetch('https://pokeapi.co/api/v2/pokemon/800');
+// const result = await response.json();
+// console.log(result.name);
+
+//PROBANDO LocalStorage
+// console.log(localStorage.getItem('nombre'));
+//Tiene 10MB de espacio mientras haya sessionStorage
+
+//Probando con React
