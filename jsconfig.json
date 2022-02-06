@@ -1,8 +1,8 @@
 {
-    "lint": {
-      "rules": {
-        "tags": ["recommended"],
-        "exclude": ["import-prefix-missing"]
-      }
-    },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["import-prefix-missing"]
+    }
   }
+}

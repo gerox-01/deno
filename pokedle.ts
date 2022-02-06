@@ -1,7 +1,7 @@
 import { colorLetter } from "./colors.ts";
-import { writePokemonFile } from './file.ts'
-import { isArceusMode } from './env.ts'
- 
+import { writePokemonFile } from "./file.ts";
+import { isArceusMode } from "./env.ts";
+
 const MAX_TRIES = 6;
 const POKEMONS_AVAILABLE = 850;
 
@@ -13,7 +13,7 @@ const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}/`)
   .then((response) => response.name.toUpperCase());
 
 if (isArceusMode) {
-  await writePokemonFile(pokemon)
+  await writePokemonFile(pokemon);
 }
 
 let globalResults = "";
@@ -25,8 +25,8 @@ function askWord() {
     return { error: "💬 You must provide a possible pokemon name" };
   } else if (response.length !== pokemon.length) {
     return {
-      error: "📏 The pokemon name must be " + pokemon.length +
-        " characters long",
+      error:
+        "📏 The pokemon name must be " + pokemon.length + " characters long",
     };
   } else if (previousGuesses.includes(response.toUpperCase())) {
     return { error: "📋 You already tried this pokemon name!" };
@@ -88,10 +88,9 @@ function start(tries: number) {
   }
 }
 
-let timesPlayed = +(localStorage.getItem('times_played') || 0)
-timesPlayed++
-localStorage.setItem('times_played', timesPlayed.toString())
-
+let timesPlayed = +(localStorage.getItem("times_played") || 0);
+timesPlayed++;
+localStorage.setItem("times_played", timesPlayed.toString());
 
 console.log("🎮 Let's play a game! Guess the Pokemon Name");
 console.log(`💡 Hint: It has ${pokemon.length} characters... Good luck!`);
