@@ -25,8 +25,8 @@ function askWord() {
     return { error: "💬 You must provide a possible pokemon name" };
   } else if (response.length !== pokemon.length) {
     return {
-      error:
-        "📏 The pokemon name must be " + pokemon.length + " characters long",
+      error: "📏 The pokemon name must be " + pokemon.length +
+        " characters long",
     };
   } else if (previousGuesses.includes(response.toUpperCase())) {
     return { error: "📋 You already tried this pokemon name!" };

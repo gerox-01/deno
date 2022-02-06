@@ -6,3 +6,5 @@
 //El comando para ejecutar constantemente es deno run --allow-net --watch index.ts
 //Con el comando deno fmt index.ts. Le da formato a los archivos de código
 //deno run --watch --allow-net=pokeapi.co index.ts
+
+//deno install -qAn vr https://deno.land/x/velociraptor@1.4.0/cli.ts  para poder implementar scripts, osea atajos para la terminal

@@ -15,7 +15,7 @@ const colorMethods = {
 
 export function colorLetter(
   color: "green" | "yellow" | "gray",
-  letter: string
+  letter: string,
 ) {
   const bg = colorMethods[color];
   const colorizedLetter = bg(bold(` ${white(letter)} `));
